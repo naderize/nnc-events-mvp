@@ -1908,6 +1908,110 @@ button:active:not(:disabled) { transform: translateY(1px); }
 .summary-total dt,
 .summary-total dd { color: var(--attendee-ink); }
 
+.buyer-progress { max-width: 560px; grid-template-columns: 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px; }
+.buyer-progress span svg { width: 11px; height: 11px; }
+.quantity-list { display: grid; gap: 9px; }
+.quantity-item { min-height: 76px; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 16px; border: 1px solid #d7e0e5; border-radius: 6px; background: #fff; padding: 12px 14px; }
+.quantity-item > div:first-child { display: grid; gap: 2px; }
+.quantity-item small { color: #64747e; }
+.quantity-item > div:first-child > span { color: var(--attendee-blue); font-size: 9px; font-weight: 800; text-transform: uppercase; }
+.quantity-item.disabled { background: #f7f8f9; color: #81909a; }
+.quantity-price { display: grid; justify-items: end; gap: 8px; }
+.quantity-stepper { width: 92px; height: 30px; display: grid; grid-template-columns: 30px 1fr 30px; align-items: center; border: 1px solid #cbd6dc; border-radius: 5px; background: #fff; overflow: hidden; }
+.quantity-stepper button { height: 100%; display: grid; place-items: center; border: 0; background: #f5f7f8; color: var(--attendee-blue); }
+.quantity-stepper button:hover { background: #eaf2f5; }
+.quantity-stepper span { text-align: center; font-weight: 850; }
+.bundle-callout,
+.profile-gate-callout,
+.credential-warning { display: flex; align-items: flex-start; gap: 10px; margin-top: 14px; border-left: 3px solid var(--attendee-blue); background: #edf4f7; padding: 11px 12px; }
+.bundle-callout > span:first-child,
+.profile-gate-callout > svg,
+.credential-warning > svg { flex: 0 0 auto; color: var(--attendee-blue); }
+.bundle-callout > div { flex: 1; }
+.bundle-callout p,
+.profile-gate-callout p { margin: 2px 0 0; color: #61717a; font-size: 10px; line-height: 1.45; }
+.assignment-panel { max-width: 860px; margin: 0 auto; }
+.purchaser-strip { min-height: 58px; display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; align-items: center; gap: 10px; margin-bottom: 14px; border: 1px solid #d9e1e5; background: #f5f8f9; padding: 9px 12px; }
+.purchaser-strip > div { display: grid; }
+.purchaser-strip small { color: #6a7982; }
+.avatar { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: #e5f1f5; color: var(--attendee-blue); font-size: 10px; font-weight: 850; }
+.avatar.warning { background: #fff2dc; color: #8c5a00; }
+.avatar.success { background: #e4f4ef; color: #176b59; }
+.holder-choice-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 9px; }
+.holder-choice { min-height: 96px; display: grid; grid-template-columns: 30px minmax(0, 1fr) 22px; align-items: start; gap: 9px; border: 1px solid #d5dfe4; border-radius: 6px; background: #fff; padding: 13px; text-align: left; }
+.holder-choice > span { width: 30px; height: 30px; display: grid; place-items: center; background: #edf4f7; color: var(--attendee-blue); }
+.holder-choice div { display: grid; gap: 3px; }
+.holder-choice small { color: #677781; line-height: 1.4; }
+.holder-choice i { width: 20px; height: 20px; display: grid; place-items: center; border: 1px solid #bbc9d0; border-radius: 50%; color: #fff; }
+.holder-choice.selected { border-color: var(--attendee-blue); background: #f2f8fb; box-shadow: inset 3px 0 0 var(--attendee-blue); }
+.holder-choice.selected i { border-color: var(--attendee-blue); background: var(--attendee-blue); }
+.holder-list { display: grid; gap: 9px; margin-top: 14px; }
+.holder-list > article { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; align-items: start; gap: 10px; border-top: 1px solid #e1e7ea; padding-top: 14px; }
+.holder-number,
+.ticket-index { width: 28px; height: 28px; display: grid; place-items: center; border: 1px solid #cbd6dc; border-radius: 50%; color: #60717a; font-size: 9px; font-weight: 850; }
+.holder-fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 9px; }
+.profile-gate-callout.compact { margin: 16px 0; }
+.terms-accept { width: 100%; display: grid; grid-template-columns: 20px minmax(0, 1fr); align-items: start; gap: 9px; margin-top: 15px; border: 1px solid #ced9de; border-radius: 5px; background: #fff; padding: 10px; text-align: left; }
+.terms-accept > span { width: 18px; height: 18px; display: grid; place-items: center; border: 1px solid #aebdc5; border-radius: 3px; color: #fff; }
+.terms-accept > div { display: grid; gap: 2px; }
+.terms-accept small { color: #6c7b84; }
+.terms-accept.selected { border-color: var(--attendee-blue); background: #f3f8fa; }
+.terms-accept.selected > span { border-color: var(--attendee-blue); background: var(--attendee-blue); }
+.attendee-primary:disabled { border-color: #b9c5cb; background: #b9c5cb; cursor: not-allowed; }
+.credential-warning { margin-top: 14px; border-color: #d18a14; background: #fff7e9; color: #76500d; font-size: 10px; }
+
+.order-status-panel { border: 1px solid #d9e1e5; border-radius: 7px; background: #fff; padding: 24px; }
+.order-success { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #e0e7ea; }
+.order-success > span { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--teal); color: #fff; }
+.order-success h2 { margin: 3px 0; font-size: 23px; }
+.order-success p { margin: 0; color: #657680; }
+.order-success > strong { font-size: 17px; }
+.order-status-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(240px, .7fr); gap: 18px; margin-top: 18px; }
+.order-ticket { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto auto; align-items: center; gap: 9px; min-height: 76px; border-top: 1px solid #e1e7ea; padding: 11px 0; }
+.order-ticket > div { display: grid; gap: 2px; }
+.order-ticket small { color: #6d7b84; }
+.payment-state { display: flex; align-items: center; gap: 4px; margin-top: 3px; color: #24715e; font-size: 9px; font-weight: 750; }
+.message-timeline { border-left: 1px solid #e0e6e9; padding-left: 16px; }
+.message-timeline h3 { margin: 0 0 6px; }
+.message-timeline article { display: grid; grid-template-columns: 28px 1fr; gap: 8px; padding: 10px 0; border-bottom: 1px solid #e5eaed; }
+.message-timeline article > span { width: 28px; height: 28px; display: grid; place-items: center; background: #edf4f7; color: var(--attendee-blue); }
+.message-timeline article div { display: grid; }
+.message-timeline small { color: #71808a; }
+.message-timeline .attendee-secondary { margin-top: 14px; }
+
+.holder-completion-wrap { max-width: 900px; display: grid; grid-template-columns: minmax(250px, .72fr) minmax(0, 1.28fr); gap: 18px; margin: 0 auto; padding: 34px; }
+.completion-intro,
+.completion-form { border: 1px solid #d9e1e5; border-radius: 7px; background: #fff; padding: 24px; }
+.completion-intro { align-self: start; }
+.secure-link-chip { width: fit-content; display: flex; align-items: center; gap: 5px; margin-bottom: 20px; background: #e8f5f1; color: #236a59; padding: 6px 8px; font-size: 9px; font-weight: 800; }
+.summary-event-mark.large { width: 52px; height: 52px; display: grid; place-items: center; margin-bottom: 15px; font-size: 15px; }
+.completion-intro h2 { margin: 5px 0 8px; font-size: 25px; }
+.completion-intro p { color: #61717a; line-height: 1.55; }
+.completion-intro dl { margin: 20px 0 0; }
+.completion-intro dl > div { display: grid; gap: 2px; border-top: 1px solid #e3e9ec; padding: 10px 0; }
+.completion-intro dt { color: #73818a; font-size: 9px; text-transform: uppercase; font-weight: 800; }
+.completion-intro dd { margin: 0; font-weight: 750; }
+.profile-completion-meter { margin-bottom: 20px; }
+.profile-completion-meter > div { display: flex; justify-content: space-between; }
+.profile-completion-meter > i { height: 7px; display: block; margin: 8px 0 5px; border-radius: 4px; background: #e5eaed; overflow: hidden; }
+.profile-completion-meter > i span { width: 60%; height: 100%; display: block; background: var(--attendee-blue); }
+.profile-completion-meter small { color: #6e7c85; }
+
+.lifecycle-panel,
+.credential-queue { margin-top: 18px; }
+.panel-heading { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.panel-heading h2 { margin: 2px 0; font-size: 17px; }
+.panel-heading p { margin: 0; color: var(--muted); }
+.eyebrow { color: var(--blue); font-size: 9px; font-weight: 850; text-transform: uppercase; }
+.split-status { display: grid; }
+.split-status small { color: var(--muted); }
+.credential-queue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 15px; }
+.credential-queue-grid article { min-height: 72px; display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; align-items: center; gap: 10px; border: 1px solid var(--line); padding: 11px; }
+.credential-queue-grid article > div:nth-child(2) { display: grid; gap: 2px; }
+.credential-queue-grid article small,
+.credential-queue-grid article > div:nth-child(2) > span { color: var(--muted); font-size: 10px; }
+.queue-actions { display: flex; align-items: center; gap: 6px; }
+
 .confirmation-wrap { max-width: 900px; margin: 0 auto; padding: 38px 36px 50px; text-align: center; }
 .confirmation-mark { width: 54px; height: 54px; display: grid; place-items: center; margin: 0 auto 14px; border-radius: 50%; background: var(--teal); color: #fff; }
 .confirmation-wrap > h2 { margin: 6px 0; font-size: 28px; }
@@ -2297,6 +2401,33 @@ button:active:not(:disabled) { transform: translateY(1px); }
   .attendee-hero-actions { align-items: stretch; flex-direction: column; }
 }
 
+@media (max-width: 900px) {
+  .credential-queue-grid { grid-template-columns: 1fr; }
+}
+
+.experience-stage.mobile .buyer-progress { max-width: none; }
+.experience-stage.mobile .quantity-item { grid-template-columns: 1fr; }
+.experience-stage.mobile .quantity-price { grid-template-columns: 1fr auto; align-items: center; justify-items: stretch; }
+.experience-stage.mobile .quantity-price > strong { align-self: center; }
+.experience-stage.mobile .holder-choice-grid,
+.experience-stage.mobile .holder-fields,
+.experience-stage.mobile .order-status-grid,
+.experience-stage.mobile .holder-completion-wrap { grid-template-columns: 1fr; }
+.experience-stage.mobile .holder-list > article { grid-template-columns: 28px minmax(0, 1fr); }
+.experience-stage.mobile .holder-list > article > .status { grid-column: 2; width: fit-content; }
+.experience-stage.mobile .order-status-panel { padding: 16px; }
+.experience-stage.mobile .order-success { grid-template-columns: 40px 1fr; align-items: start; }
+.experience-stage.mobile .order-success > strong { grid-column: 2; }
+.experience-stage.mobile .order-ticket { grid-template-columns: 30px minmax(0, 1fr); align-items: start; }
+.experience-stage.mobile .order-ticket > .status,
+.experience-stage.mobile .order-ticket > button { grid-column: 2; width: fit-content; }
+.experience-stage.mobile .message-timeline { border-left: 0; border-top: 1px solid #e0e6e9; padding: 16px 0 0; }
+.experience-stage.mobile .holder-completion-wrap { padding: 20px 13px 70px; }
+.experience-stage.mobile .completion-intro,
+.experience-stage.mobile .completion-form { padding: 18px 16px; }
+.experience-stage.mobile .purchaser-strip { grid-template-columns: 36px 1fr; }
+.experience-stage.mobile .purchaser-strip > .status { grid-column: 2; width: fit-content; }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -2452,6 +2583,12 @@ const state = {
   experienceStep: 'discover',
   experienceDevice: 'desktop',
   selectedTicket: 'Executive',
+  ticketQuantities: { 'General admission': 2, Executive: 0, 'Partner allocation': 0 },
+  addonQuantities: { 'Workshop day': 0, 'Gala dinner': 0 },
+  holderMode: 'later',
+  termsAccepted: false,
+  orderPaid: false,
+  holderProfileComplete: false,
   savedSessions: new Set(['retail-intelligence']),
   networkRequested: false,
   pollVoted: false,
@@ -2861,6 +2998,13 @@ function ticketsView() {
         <div class="tabs" style="padding:0 15px"><button class="tab active">Ticket tiers</button><button class="tab">Orders</button><button class="tab">Discounts</button><button class="tab">Refunds</button><button class="tab">Payouts</button><button class="tab">Webhook log</button></div>
         <div class="data-table-wrap"><table class="data-table"><thead><tr><th style="width:27%">Ticket</th><th>Price</th><th>Issued / capacity</th><th>Fill</th><th>Availability</th><th style="width:48px"></th></tr></thead><tbody>${tiers.map(tier => `<tr><td><span class="row-title">${tier[0]}<small>Sales phase: Standard</small></span></td><td>${tier[1]}</td><td>${tier[2]}</td><td>${tier[3]}</td><td>${statusBadge(tier[4] === 'On sale' ? 'Registration open' : tier[4])}</td><td><button class="table-action" title="Edit ticket">${icon('pencil')}</button></td></tr>`).join('')}</tbody></table></div>
       </section>
+      <section class="section-panel lifecycle-panel">
+        <div class="panel-heading"><div><span class="eyebrow">Ticket lifecycle</span><h2>Recent multi-ticket orders</h2><p>Payment and credential issuance are tracked independently for every ticket holder.</p></div><button class="button" data-action="review-buyer-order">${icon('route')}Open buyer journey</button></div>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Order</th><th>Purchaser</th><th>Payment</th><th>Ticket holders</th><th>Credentials</th><th>Next action</th></tr></thead><tbody>
+          <tr><td><span class="row-title">NNC-20481<small>2 General admission · AED 1,785</small></span></td><td><span class="row-title">Layla Hassan<small>layla@northwind.ae</small></span></td><td>${statusBadge('Confirmed')}</td><td><span class="split-status"><strong>1 complete</strong><small>1 profile incomplete</small></span></td><td><span class="status warning">1 of 2 issued</span></td><td><button class="button small" data-route="attendees">Resolve gate</button></td></tr>
+          <tr><td><span class="row-title">NNC-20476<small>3 Executive · AED 5,827.50</small></span></td><td><span class="row-title">Khalid Noor<small>khalid@vertex.ae</small></span></td><td>${statusBadge('Confirmed')}</td><td><span class="split-status"><strong>3 complete</strong><small>All attendee identities verified</small></span></td><td><span class="status success">3 of 3 issued</span></td><td><button class="table-action" title="Open order">${icon('arrow-right')}</button></td></tr>
+        </tbody></table></div>
+      </section>
     </div>
   `;
 }
@@ -2894,6 +3038,13 @@ function attendeesView() {
         ${metricCard('Profile incomplete', '186', 'Credential issuance gated', 'circle-alert')}
         ${metricCard('Waitlisted', '74', 'Next release: 24 seats', 'hourglass')}
         ${metricCard('Checked in', String(state.checkedIn), '37.1% of confirmed', 'scan-line')}
+      </section>
+      <section class="section-panel credential-queue">
+        <div class="panel-heading"><div><span class="eyebrow">Needs action</span><h2>Credential-gated queue</h2><p>Paid tickets stay valid orders, but QR credentials are withheld until each required profile is complete.</p></div><span class="status warning">186 gated</span></div>
+        <div class="credential-queue-grid">
+          <article><span class="avatar warning">OS</span><div><strong>Omar Saleh</strong><small>Order NNC-20481 · General admission</small><span>Missing job title and company stage</span></div><div class="queue-actions"><button class="button small" data-action="send-profile-reminder">${icon('send', 14)}Send reminder</button><button class="table-action" data-action="open-holder-completion" title="Preview completion link">${icon('external-link', 16)}</button></div></article>
+          <article><span class="avatar success">SA</span><div><strong>Sara Al Mansouri</strong><small>Order NNC-20481 · General admission</small><span>Profile complete · credential issued at 14:32</span></div><span class="status success">Issued</span></article>
+        </div>
       </section>
       <section class="section-panel">
         <div class="toolbar"><div class="segmented"><button class="segment active">All</button><button class="segment">Confirmed</button><button class="segment">Profile gated</button><button class="segment">Waitlisted</button></div><div class="toolbar-actions"><input class="search-field" type="search" placeholder="Search attendees" /><button class="button">${icon('list-filter')}Filter</button><button class="button">${icon('ellipsis')}Bulk actions</button></div></div>
@@ -3052,9 +3203,13 @@ function attentionView() {
 
 const experienceSteps = [
   { id: 'discover', label: 'Discovery', phase: 'Phase 1', requirement: 'WEB-001', icon: 'globe-2' },
-  { id: 'register', label: 'Registration', phase: 'Phase 1', requirement: 'REG-001', icon: 'notebook-tabs' },
-  { id: 'checkout', label: 'Checkout', phase: 'Phase 1', requirement: 'PAY-002', icon: 'credit-card' },
-  { id: 'confirmation', label: 'Confirmation', phase: 'Phase 1', requirement: 'REG-005', icon: 'badge-check' },
+  { id: 'tickets', label: 'Tickets', phase: 'Phase 1', requirement: 'PAY-001', icon: 'tickets' },
+  { id: 'addons', label: 'Add-ons', phase: 'Phase 1', requirement: 'PAY-014', icon: 'package-plus' },
+  { id: 'attendees', label: 'Attendees', phase: 'Phase 1', requirement: 'REG-018', icon: 'users-round' },
+  { id: 'checkout', label: 'Review & pay', phase: 'Phase 1', requirement: 'PAY-015', icon: 'credit-card' },
+  { id: 'order', label: 'Order status', phase: 'Phase 1', requirement: 'PAY-016', icon: 'receipt-text' },
+  { id: 'completion', label: 'Complete profile', phase: 'Phase 1', requirement: 'REG-005', icon: 'user-round-check' },
+  { id: 'credential', label: 'Credential issued', phase: 'Phase 2', requirement: 'ONS-014', icon: 'badge-check' },
   { id: 'home', label: 'Event home', phase: 'Phase 2', requirement: 'APP-001', icon: 'house' },
   { id: 'agenda', label: 'My agenda', phase: 'Phase 2', requirement: 'APP-004', icon: 'calendar-range' },
   { id: 'network', label: 'Networking', phase: 'Phase 4', requirement: 'NET-005', icon: 'messages-square' },
@@ -3063,7 +3218,40 @@ const experienceSteps = [
   { id: 'followup', label: 'Post-event', phase: 'Phase 3', requirement: 'ENG-004', icon: 'sparkles' }
 ];
 
+const buyerTickets = [
+  { name: 'General admission', price: 850, detail: 'Two-day event access', meta: 'Early-bird · 438 remaining' },
+  { name: 'Executive', price: 1850, detail: 'Hosted meetings and lounge access', meta: '72 remaining' },
+  { name: 'Partner allocation', price: 0, detail: 'Invitation code required', meta: 'Private inventory' }
+];
+
+const buyerAddons = [
+  { name: 'Workshop day', price: 350, detail: '17 September · Limited to 80 places', available: true },
+  { name: 'Gala dinner', price: 425, detail: 'Executive pass holders only', available: false },
+  { name: 'Airport transfer', price: 120, detail: 'Shared arrival transfer', available: false, soldOut: true }
+];
+
+function buyerTicketCount() {
+  return Object.values(state.ticketQuantities).reduce((sum, quantity) => sum + quantity, 0);
+}
+
+function buyerSubtotal() {
+  const tickets = buyerTickets.reduce((sum, ticket) => sum + ticket.price * (state.ticketQuantities[ticket.name] || 0), 0);
+  const addons = buyerAddons.reduce((sum, addon) => sum + addon.price * (state.addonQuantities[addon.name] || 0), 0);
+  return tickets + addons;
+}
+
+function formatAed(value) {
+  return value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function buyerProgress(active) {
+  return `<div class="flow-progress buyer-progress" aria-label="Buyer checkout progress">${[1,2,3,4,5].map((step, index) => `${index ? `<i class="${step <= active ? 'complete' : ''}"></i>` : ''}<span class="${step < active ? 'complete' : step === active ? 'active' : ''}">${step < active ? icon('check', 11) : step}</span>`).join('')}</div>`;
+}
+
 function attendeeSiteHeader(active = '') {
+  const buyerView = ['discover', 'tickets', 'addons', 'attendees', 'checkout', 'order'].includes(state.experienceStep);
+  const initials = buyerView ? 'LH' : 'OS';
+  const profileName = buyerView ? 'Layla Hassan' : 'Omar Saleh';
   return `
     <header class="attendee-site-header">
       <button class="attendee-brand" data-experience-step="discover" aria-label="Future of Commerce home"><span>FC</span><strong>Future of Commerce</strong></button>
@@ -3074,7 +3262,7 @@ function attendeeSiteHeader(active = '') {
       </nav>
       <div class="attendee-header-actions">
         <button class="attendee-icon-button" aria-label="Notifications" title="Notifications">${icon('bell', 17)}<span class="unread-dot"></span></button>
-        <button class="attendee-profile-button" data-experience-step="home" aria-label="Mariam Haddad profile">MH</button>
+        <button class="attendee-profile-button" data-experience-step="home" aria-label="${profileName} profile">${initials}</button>
       </div>
     </header>
   `;
@@ -3087,7 +3275,7 @@ function attendeeAppNav(active) {
     ['onsite', 'map-pinned', 'Map'],
     ['network', 'users', 'Connect']
   ];
-  return `<nav class="attendee-app-nav" aria-label="Attendee app navigation">${items.map(item => `<button class="${active === item[0] ? 'active' : ''}" data-experience-step="${item[0]}">${icon(item[1], 18)}<span>${item[2]}</span></button>`).join('')}<button data-experience-step="confirmation">${icon('ticket', 18)}<span>Ticket</span></button></nav>`;
+  return `<nav class="attendee-app-nav" aria-label="Attendee app navigation">${items.map(item => `<button class="${active === item[0] ? 'active' : ''}" data-experience-step="${item[0]}">${icon(item[1], 18)}<span>${item[2]}</span></button>`).join('')}<button data-experience-step="credential">${icon('ticket', 18)}<span>Ticket</span></button></nav>`;
 }
 
 function qrMarkup() {
@@ -3104,7 +3292,7 @@ function discoveryExperience() {
           <span class="event-kicker">18-19 September 2026 · Dubai</span>
           <h2>Future of Commerce 2026</h2>
           <p>Two focused days for leaders building the next generation of retail, payments, and customer experience.</p>
-          <div class="attendee-hero-actions"><button class="attendee-primary" data-experience-step="register">Register now ${icon('arrow-right', 16)}</button><button class="attendee-secondary light" data-experience-step="agenda">Explore agenda</button></div>
+          <div class="attendee-hero-actions"><button class="attendee-primary" data-experience-step="tickets">Register now ${icon('arrow-right', 16)}</button><button class="attendee-secondary light" data-experience-step="agenda">Explore agenda</button></div>
         </div>
       </section>
       <section class="attendee-proof-strip"><div><strong>48</strong><span>Expert speakers</span></div><div><strong>32</strong><span>Focused sessions</span></div><div><strong>2,400</strong><span>Commerce leaders</span></div><div><strong>18</strong><span>Markets represented</span></div></section>
@@ -3116,76 +3304,152 @@ function discoveryExperience() {
           <article><span class="feature-number">03</span><h4>Real product access</h4><p>Focused demonstrations, expert office hours, and resources you can revisit after the event.</p></article>
         </div>
       </section>
-      <section class="attendee-agenda-band"><div><span class="event-kicker dark">Opening morning</span><h3>From signal to action</h3><p>Keynotes, working sessions, and hosted meetings begin at 09:00.</p></div><button class="attendee-primary" data-experience-step="register">Choose your pass</button></section>
+      <section class="attendee-agenda-band"><div><span class="event-kicker dark">Opening morning</span><h3>From signal to action</h3><p>Keynotes, working sessions, and hosted meetings begin at 09:00.</p></div><button class="attendee-primary" data-experience-step="tickets">Choose your pass</button></section>
     </div>
   `;
 }
 
-function registrationExperience() {
-  const tickets = [
-    { name: 'General admission', price: 'AED 850', detail: 'Two-day event access' },
-    { name: 'Executive', price: 'AED 1,850', detail: 'Hosted meetings and lounge access' },
-    { name: 'Partner allocation', price: 'Complimentary', detail: 'Invitation code required' }
-  ];
+function ticketSelectionExperience() {
+  const ticketCount = buyerTicketCount();
   return `
     <div class="attendee-page attendee-flow-page">
       ${attendeeSiteHeader()}
       <div class="attendee-flow-wrap">
-        <div class="flow-progress"><span class="complete">1</span><i></i><span class="active">2</span><i></i><span>3</span><i></i><span>4</span></div>
+        ${buyerProgress(1)}
         <div class="attendee-flow-grid">
           <main class="attendee-flow-main">
-            <div class="flow-heading"><span class="event-kicker dark">Registration</span><h2>Choose your pass</h2><p>Prices include VAT. Your place is held for 10 minutes during checkout.</p></div>
-            <div class="ticket-choice-list">${tickets.map(ticket => `<button class="ticket-choice ${state.selectedTicket === ticket.name ? 'selected' : ''}" data-action="choose-ticket" data-ticket="${ticket.name}"><span class="ticket-radio"></span><span><strong>${ticket.name}</strong><small>${ticket.detail}</small></span><strong>${ticket.price}</strong></button>`).join('')}</div>
-            <div class="registration-fields"><h3>Your details</h3><div class="attendee-field-grid"><label>First name<input value="Mariam" /></label><label>Last name<input value="Haddad" /></label><label>Email address<input type="email" value="mariam.haddad@meridian.ae" /></label><label>Company<input value="Meridian Retail" /></label><label>Job title<input value="Chief Experience Officer" /></label><label>Country<select><option>United Arab Emirates</option><option>Georgia</option><option>United Kingdom</option></select></label></div></div>
-            <div class="consent-stack"><label><input type="checkbox" checked /><span>I accept the event terms and privacy notice.</span></label><label><input type="checkbox" checked /><span>List my name, role, and company in the attendee directory.</span></label><label><input type="checkbox" /><span>Share my details only when I explicitly exchange contact information.</span></label></div>
-            <div class="flow-actions"><button class="attendee-secondary" data-experience-step="discover">Back</button><button class="attendee-primary" data-action="continue-registration">Continue to payment ${icon('arrow-right', 16)}</button></div>
+            <div class="flow-heading"><span class="event-kicker dark">Step 1 of 5</span><h2>Select tickets</h2><p>Buy for yourself or a group. Names can be added now or after payment.</p></div>
+            <div class="quantity-list">${buyerTickets.map(ticket => `<article class="quantity-item"><div><strong>${ticket.name}</strong><small>${ticket.detail}</small><span>${ticket.meta}</span></div><div class="quantity-price"><strong>${ticket.price ? `AED ${ticket.price.toLocaleString()}` : 'Complimentary'}</strong><div class="quantity-stepper" aria-label="${ticket.name} quantity"><button data-action="change-ticket-quantity" data-ticket="${ticket.name}" data-delta="-1" aria-label="Remove ${ticket.name}">${icon('minus', 14)}</button><span>${state.ticketQuantities[ticket.name] || 0}</span><button data-action="change-ticket-quantity" data-ticket="${ticket.name}" data-delta="1" aria-label="Add ${ticket.name}">${icon('plus', 14)}</button></div></div></article>`).join('')}</div>
+            <div class="bundle-callout"><span>${icon('users-round', 19)}</span><div><strong>Founder Duo bundle</strong><p>Buying two General passes reserves two independent ticket records and saves both places together.</p></div><span class="status info">Applied</span></div>
+            <div class="flow-actions"><button class="attendee-secondary" data-experience-step="discover">Back</button><button class="attendee-primary" data-action="continue-to-addons" ${ticketCount ? '' : 'disabled'}>Continue with ${ticketCount} ticket${ticketCount === 1 ? '' : 's'} ${icon('arrow-right', 16)}</button></div>
           </main>
-          <aside class="attendee-order-summary"><span class="event-kicker dark">Your registration</span><h3>Future of Commerce 2026</h3><dl><div><dt>Date</dt><dd>18-19 Sep 2026</dd></div><div><dt>Venue</dt><dd>Dubai World Trade Centre</dd></div><div><dt>Pass</dt><dd>${state.selectedTicket}</dd></div></dl><div class="support-note">${icon('shield-check', 18)}<span>Your privacy choices can be changed from your attendee profile.</span></div></aside>
+          <aside class="attendee-order-summary"><span class="event-kicker dark">Your order</span><h3>Future of Commerce 2026</h3><dl><div><dt>Tickets</dt><dd>${ticketCount}</dd></div><div><dt>Subtotal</dt><dd>AED ${formatAed(buyerSubtotal())}</dd></div><div><dt>Inventory hold</dt><dd>Starts at checkout</dd></div></dl><div class="support-note">${icon('shield-check', 18)}<span>Every ticket has its own holder, profile state, and credential.</span></div></aside>
         </div>
+      </div>
+    </div>
+  `;
+}
+
+function addonsExperience() {
+  return `
+    <div class="attendee-page attendee-flow-page">
+      ${attendeeSiteHeader()}
+      <div class="attendee-flow-wrap">
+        ${buyerProgress(2)}
+        <div class="attendee-flow-grid">
+          <main class="attendee-flow-main">
+            <div class="flow-heading"><span class="event-kicker dark">Step 2 of 5</span><h2>Add experiences</h2><p>Add-ons have separate capacity and eligibility from the main ticket.</p></div>
+            <div class="quantity-list">${buyerAddons.map(addon => `<article class="quantity-item ${!addon.available ? 'disabled' : ''}"><div><strong>${addon.name}</strong><small>${addon.detail}</small><span>${addon.soldOut ? 'Sold out' : addon.available ? 'Available' : 'Requires an Executive pass'}</span></div><div class="quantity-price"><strong>AED ${addon.price.toLocaleString()}</strong>${addon.available ? `<div class="quantity-stepper"><button data-action="change-addon-quantity" data-addon="${addon.name}" data-delta="-1" aria-label="Remove ${addon.name}">${icon('minus', 14)}</button><span>${state.addonQuantities[addon.name] || 0}</span><button data-action="change-addon-quantity" data-addon="${addon.name}" data-delta="1" aria-label="Add ${addon.name}">${icon('plus', 14)}</button></div>` : `<span class="status ${addon.soldOut ? 'danger' : 'warning'}">${addon.soldOut ? 'Sold out' : 'Locked'}</span>`}</div></article>`).join('')}</div>
+            <div class="flow-actions"><button class="attendee-secondary" data-experience-step="tickets">Back</button><button class="attendee-primary" data-action="continue-to-attendees">Continue ${icon('arrow-right', 16)}</button></div>
+          </main>
+          <aside class="attendee-order-summary"><span class="event-kicker dark">Order summary</span><h3>${buyerTicketCount()} General admission passes</h3><dl><div><dt>Tickets</dt><dd>AED ${formatAed(buyerTickets[0].price * (state.ticketQuantities['General admission'] || 0))}</dd></div><div><dt>Add-ons</dt><dd>AED ${formatAed(buyerSubtotal() - buyerTickets.reduce((sum, ticket) => sum + ticket.price * (state.ticketQuantities[ticket.name] || 0), 0))}</dd></div><div><dt>Subtotal</dt><dd>AED ${formatAed(buyerSubtotal())}</dd></div></dl><div class="support-note">${icon('circle-help', 18)}<span>You can continue without add-ons and return before payment.</span></div></aside>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function attendeeAssignmentExperience() {
+  const completeNow = state.holderMode === 'now';
+  return `
+    <div class="attendee-page attendee-flow-page">
+      ${attendeeSiteHeader()}
+      <div class="attendee-flow-wrap">
+        ${buyerProgress(3)}
+        <main class="attendee-flow-main assignment-panel">
+          <div class="flow-heading"><span class="event-kicker dark">Step 3 of 5</span><h2>Who will use the tickets?</h2><p>Layla is the purchaser and billing contact. Ticket holders can be different people.</p></div>
+          <section class="purchaser-strip"><span class="avatar">LH</span><div><strong>Layla Hassan</strong><small>Purchaser · layla@northwind.ae</small></div><span class="status info">Receives invoice</span></section>
+          <div class="holder-choice-grid">
+            <button class="holder-choice ${completeNow ? 'selected' : ''}" data-action="set-holder-mode" data-mode="now"><span>${icon('clipboard-check', 20)}</span><div><strong>Complete attendee details now</strong><small>Enter every required profile before payment and issue credentials immediately.</small></div><i>${completeNow ? icon('check', 14) : ''}</i></button>
+            <button class="holder-choice ${!completeNow ? 'selected' : ''}" data-action="set-holder-mode" data-mode="later"><span>${icon('mail-plus', 20)}</span><div><strong>Invite attendees to complete later</strong><small>Pay now, then send each holder a secure single-use completion link.</small></div><i>${!completeNow ? icon('check', 14) : ''}</i></button>
+          </div>
+          <div class="holder-list">
+            <article><div class="holder-number">1</div><div class="holder-fields"><label>Ticket holder name<input value="Omar Saleh" /></label><label>Email address<input type="email" value="omar@northwind.ae" /></label>${completeNow ? `<label>Job title<input value="Growth Director" /></label><label>Company stage<select><option>Series A-B</option><option>Seed</option><option>Growth</option></select></label>` : ''}</div><span class="status ${completeNow ? 'success' : 'warning'}">${completeNow ? 'Complete' : 'Invite after payment'}</span></article>
+            <article><div class="holder-number">2</div><div class="holder-fields"><label>Ticket holder name<input value="Sara Al Mansouri" /></label><label>Email address<input type="email" value="sara@northwind.ae" /></label>${completeNow ? `<label>Job title<input value="Product Lead" /></label><label>Company stage<select><option>Series A-B</option><option>Seed</option><option>Growth</option></select></label>` : ''}</div><span class="status ${completeNow ? 'success' : 'warning'}">${completeNow ? 'Complete' : 'Invite after payment'}</span></article>
+          </div>
+          ${completeNow ? '' : `<div class="profile-gate-callout">${icon('lock-keyhole', 19)}<div><strong>Payment does not bypass attendee requirements</strong><p>The order will be paid, but each QR credential stays gated until its ticket holder completes all required fields.</p></div></div>`}
+          <div class="flow-actions"><button class="attendee-secondary" data-experience-step="addons">Back</button><button class="attendee-primary" data-action="continue-to-checkout">Review order ${icon('arrow-right', 16)}</button></div>
+        </main>
       </div>
     </div>
   `;
 }
 
 function checkoutExperience() {
-  const price = state.selectedTicket === 'Executive' ? '1,850.00' : state.selectedTicket === 'Partner allocation' ? '0.00' : '850.00';
-  const vat = state.selectedTicket === 'Executive' ? '92.50' : state.selectedTicket === 'Partner allocation' ? '0.00' : '42.50';
-  const total = state.selectedTicket === 'Executive' ? '1,942.50' : state.selectedTicket === 'Partner allocation' ? '0.00' : '892.50';
+  const subtotal = buyerSubtotal();
+  const vat = subtotal * 0.05;
+  const total = subtotal + vat;
   return `
     <div class="attendee-page attendee-flow-page">
       ${attendeeSiteHeader()}
       <div class="attendee-flow-wrap">
-        <div class="flow-progress"><span class="complete">1</span><i class="complete"></i><span class="complete">2</span><i></i><span class="active">3</span><i></i><span>4</span></div>
+        ${buyerProgress(4)}
         <div class="checkout-layout">
           <main class="payment-panel">
-            <div class="flow-heading"><span class="event-kicker dark">Secure checkout</span><h2>Complete payment</h2><p>Inventory reserved for <strong class="hold-timer">09:42</strong></p></div>
+            <div class="flow-heading"><span class="event-kicker dark">Step 4 of 5 · Secure checkout</span><h2>Review and pay</h2><p>Two ticket records reserved for <strong class="hold-timer">09:42</strong></p></div>
             <div class="wallet-row"><button>${icon('smartphone', 17)}Apple Pay</button><button>${icon('wallet-cards', 17)}Google Pay</button></div>
             <div class="or-divider"><span>or pay by card</span></div>
-            <div class="hosted-payment"><label>Card number<div class="card-input"><span>4242 4242 4242 4242</span><span>VISA</span></div></label><div class="attendee-field-grid"><label>Expiry<input value="09 / 29" /></label><label>Security code<input value="123" /></label></div><label>Name on card<input value="Mariam Haddad" /></label></div>
-            <label class="billing-check"><input type="checkbox" checked /><span>Billing address is the same as my registration address</span></label>
-            <div class="flow-actions"><button class="attendee-secondary" data-experience-step="register">Back</button><button class="attendee-primary" data-action="complete-payment">Pay AED ${total} ${icon('lock-keyhole', 15)}</button></div>
+            <div class="hosted-payment"><label>Card number<div class="card-input"><span>4242 4242 4242 4242</span><span>VISA</span></div></label><div class="attendee-field-grid"><label>Expiry<input value="09 / 29" /></label><label>Security code<input value="123" /></label></div><label>Name on card<input value="Layla Hassan" /></label></div>
+            <label class="billing-check"><input type="checkbox" checked /><span>Billing address is the same as the purchaser address</span></label>
+            <button class="terms-accept ${state.termsAccepted ? 'selected' : ''}" data-action="toggle-terms" role="checkbox" aria-checked="${state.termsAccepted}"><span>${state.termsAccepted ? icon('check', 13) : ''}</span><div><strong>I accept the ticket terms and refund policy</strong><small>Required before the hosted payment can be submitted.</small></div></button>
+            <div class="flow-actions"><button class="attendee-secondary" data-experience-step="attendees">Back</button><button class="attendee-primary" data-action="complete-payment" ${state.termsAccepted ? '' : 'disabled'}>Pay AED ${formatAed(total)} ${icon('lock-keyhole', 15)}</button></div>
             <p class="payment-foot">${icon('shield-check', 15)} Secure hosted payment. NNC Events does not store card details.</p>
           </main>
-          <aside class="checkout-summary"><span class="event-kicker dark">Order summary</span><h3>${state.selectedTicket}</h3><div class="summary-event"><span class="summary-event-mark">FC</span><div><strong>Future of Commerce 2026</strong><small>18-19 September · Dubai</small></div></div><dl><div><dt>Pass</dt><dd>AED ${price}</dd></div><div><dt>VAT 5%</dt><dd>AED ${vat}</dd></div><div class="promo-line"><dt><input placeholder="Promo code" aria-label="Promo code" /></dt><dd><button>Apply</button></dd></div><div class="summary-total"><dt>Total</dt><dd>AED ${total}</dd></div></dl></aside>
+          <aside class="checkout-summary"><span class="event-kicker dark">Order summary</span><h3>${buyerTicketCount()} tickets for 2 holders</h3><div class="summary-event"><span class="summary-event-mark">FC</span><div><strong>Future of Commerce 2026</strong><small>18-19 September · Dubai</small></div></div><dl><div><dt>2 × General admission</dt><dd>AED ${formatAed(1700)}</dd></div>${state.addonQuantities['Workshop day'] ? `<div><dt>Workshop day</dt><dd>AED ${formatAed(350 * state.addonQuantities['Workshop day'])}</dd></div>` : ''}<div><dt>VAT 5%</dt><dd>AED ${formatAed(vat)}</dd></div><div class="promo-line"><dt><input placeholder="Promo code" aria-label="Promo code" /></dt><dd><button>Apply</button></dd></div><div class="summary-total"><dt>Total</dt><dd>AED ${formatAed(total)}</dd></div></dl><div class="credential-warning">${icon('badge-alert', 18)}<span>${state.holderMode === 'later' ? '2 paid tickets will remain unissued until holder profiles are complete.' : 'Both holder profiles are complete and ready for credential issuance.'}</span></div></aside>
         </div>
       </div>
     </div>
   `;
 }
 
-function confirmationExperience() {
+function orderStatusExperience() {
+  const omarIssued = state.holderMode === 'now' || state.holderProfileComplete;
+  return `
+    <div class="attendee-page attendee-flow-page">
+      ${attendeeSiteHeader()}
+      <div class="attendee-flow-wrap">
+        ${buyerProgress(5)}
+        <main class="order-status-panel">
+          <div class="order-success"><span>${icon('check', 22)}</span><div><span class="event-kicker dark">Payment approved</span><h2>Order NNC-20481 is confirmed</h2><p>Receipt and VAT invoice sent to purchaser Layla Hassan.</p></div><strong>AED ${formatAed(buyerSubtotal() * 1.05)}</strong></div>
+          <div class="order-status-grid">
+            <section><div class="attendee-section-heading compact"><div><h3>Ticket holders</h3><small>Payment and credential states are independent</small></div><span class="status warning">${omarIssued ? '2' : '1'} of 2 issued</span></div>
+              <article class="order-ticket"><span class="ticket-index">01</span><div><strong>Omar Saleh</strong><small>omar@northwind.ae · General admission</small><span class="payment-state">${icon('circle-check', 14)} Paid and allocated</span></div><span class="status ${omarIssued ? 'success' : 'warning'}">${omarIssued ? 'Credential issued' : 'Profile incomplete'}</span>${omarIssued ? `<button class="table-action" data-experience-step="credential" title="Open credential">${icon('arrow-right', 16)}</button>` : `<button class="button small" data-action="open-holder-completion">Complete profile</button>`}</article>
+              <article class="order-ticket"><span class="ticket-index">02</span><div><strong>Sara Al Mansouri</strong><small>sara@northwind.ae · General admission</small><span class="payment-state">${icon('circle-check', 14)} Paid and allocated</span></div><span class="status success">Credential issued</span><button class="table-action" title="Open credential">${icon('arrow-right', 16)}</button></article>
+            </section>
+            <aside class="message-timeline"><h3>Notifications</h3><article><span>${icon('receipt-text', 16)}</span><div><strong>Invoice sent to Layla</strong><small>Purchaser · delivered 14:31</small></div></article><article><span>${icon('mail-check', 16)}</span><div><strong>Completion link sent to Omar</strong><small>Single use · expires in 7 days</small></div></article><article><span>${icon('badge-check', 16)}</span><div><strong>Sara's credential issued</strong><small>Wallet and app access ready</small></div></article><button class="attendee-secondary full" data-route="tickets">View in organizer console</button></aside>
+          </div>
+          <div class="flow-actions"><button class="attendee-secondary" data-experience-step="checkout">Review payment</button><button class="attendee-primary" data-action="open-holder-completion">Open Omar's completion link ${icon('arrow-right', 16)}</button></div>
+        </main>
+      </div>
+    </div>
+  `;
+}
+
+function holderCompletionExperience() {
+  return `
+    <div class="attendee-page attendee-flow-page">
+      ${attendeeSiteHeader()}
+      <main class="holder-completion-wrap">
+        <section class="completion-intro"><span class="secure-link-chip">${icon('shield-check', 15)}Secure single-use link</span><span class="summary-event-mark large">FC</span><span class="event-kicker dark">Ticket 01 · Order NNC-20481</span><h2>Omar, complete your attendee profile</h2><p>Layla Hassan has purchased a General admission pass for you. Complete the required fields to unlock your QR credential.</p><dl><div><dt>Link expires</dt><dd>24 September 2026</dd></div><div><dt>Registered email</dt><dd>omar@northwind.ae</dd></div></dl></section>
+        <section class="completion-form"><div class="profile-completion-meter"><div><strong>Profile completion</strong><span>60%</span></div><i><span></span></i><small>Two required fields remain</small></div><div class="attendee-field-grid"><label>First name<input value="Omar" /></label><label>Last name<input value="Saleh" /></label><label>Email address<input value="omar@northwind.ae" disabled /></label><label>Company<input value="Northwind Ventures" /></label><label>Job title *<input placeholder="Enter job title" /></label><label>Company stage *<select><option>Select stage</option><option>Seed</option><option>Series A-B</option><option>Growth</option></select></label></div><div class="consent-stack"><label><input type="checkbox" checked /><span>Show my name, role, and company in the attendee directory.</span></label><label><input type="checkbox" /><span>Allow relevant meeting recommendations.</span></label></div><div class="profile-gate-callout compact">${icon('lock-keyhole', 18)}<div><strong>Your ticket is paid</strong><p>The QR appears immediately after all required profile fields are submitted.</p></div></div><button class="attendee-primary full" data-action="complete-holder-registration">Complete profile and issue QR ${icon('arrow-right', 16)}</button></section>
+      </main>
+    </div>
+  `;
+}
+
+function credentialExperience() {
   return `
     <div class="attendee-page attendee-flow-page">
       ${attendeeSiteHeader()}
       <main class="confirmation-wrap">
         <div class="confirmation-mark">${icon('check', 28)}</div>
-        <span class="event-kicker dark">Registration confirmed</span>
-        <h2>You're going to Future of Commerce</h2>
-        <p>A confirmation and receipt have been sent to mariam.haddad@meridian.ae.</p>
+        <span class="event-kicker dark">Credential issued</span>
+        <h2>You're ready for Future of Commerce</h2>
+        <p>Your ticket is now available in the event app and has been sent to omar@northwind.ae.</p>
         <div class="confirmation-grid">
           <article class="digital-ticket">
-            <div class="ticket-top"><span class="summary-event-mark">FC</span><div><strong>Future of Commerce 2026</strong><small>Executive pass · Order NNC-20481</small></div></div>
-            <div class="ticket-body">${qrMarkup()}<div><span class="status success">Credential issued</span><h3>Mariam Haddad</h3><p>18-19 September 2026<br />Dubai World Trade Centre</p><small>Support reference: FC26-MH-481</small></div></div>
+            <div class="ticket-top"><span class="summary-event-mark">FC</span><div><strong>Future of Commerce 2026</strong><small>General admission · Order NNC-20481</small></div></div>
+            <div class="ticket-body">${qrMarkup()}<div><span class="status success">Credential issued</span><h3>Omar Saleh</h3><p>18-19 September 2026<br />Dubai World Trade Centre</p><small>Support reference: FC26-OS-481</small></div></div>
           </article>
           <aside class="confirmation-actions"><h3>Get event-ready</h3><button data-action="add-calendar">${icon('calendar-plus', 18)}<span><strong>Add to calendar</strong><small>Google, Apple, or Outlook</small></span>${icon('chevron-right', 16)}</button><button data-action="download-ticket">${icon('wallet-cards', 18)}<span><strong>Save ticket</strong><small>Available offline after sync</small></span>${icon('chevron-right', 16)}</button><button data-experience-step="home">${icon('smartphone', 18)}<span><strong>Open event app</strong><small>Build your agenda and connect</small></span>${icon('chevron-right', 16)}</button></aside>
         </div>
@@ -3199,13 +3463,13 @@ function homeExperience() {
     <div class="attendee-page attendee-app-page">
       ${attendeeSiteHeader('home')}
       <main class="attendee-app-content">
-        <section class="app-welcome"><div><span class="event-kicker dark">Friday, 18 September</span><h2>Good morning, Mariam</h2><p>Your next session begins in 24 minutes.</p></div><button class="ticket-shortcut" data-experience-step="confirmation">${icon('qr-code', 19)}<span>My ticket</span></button></section>
+        <section class="app-welcome"><div><span class="event-kicker dark">Friday, 18 September</span><h2>Good morning, Omar</h2><p>Your next session begins in 24 minutes.</p></div><button class="ticket-shortcut" data-experience-step="credential">${icon('qr-code', 19)}<span>My ticket</span></button></section>
         <div class="app-content-grid">
           <div>
             <section class="next-session-panel"><div class="next-session-time"><span>09:30</span><small>45 min</small></div><div><span class="live-label">Next in your agenda</span><h3>Retail intelligence in action</h3><p>Main stage · Hall 2</p><div class="session-speakers"><span class="mini-avatar coral">AK</span><span class="mini-avatar teal">SM</span><small>Aisha Khan and Stefan Muller</small></div></div><button class="attendee-primary small" data-experience-step="virtual">Join session</button></section>
             <section class="timeline-section"><div class="attendee-section-heading compact"><h3>Your timeline</h3><button class="text-link" data-experience-step="agenda">Full agenda</button></div><div class="timeline-list"><article><time>08:45</time><span class="timeline-dot complete"></span><div><strong>Doors open and breakfast</strong><small>Concourse · Level 1</small></div></article><article><time>09:30</time><span class="timeline-dot active"></span><div><strong>Retail intelligence in action</strong><small>Main stage · Hall 2</small></div></article><article><time>11:00</time><span class="timeline-dot"></span><div><strong>Meeting with Daniel Okafor</strong><small>Meeting hub · Table 14</small></div></article><article><time>12:00</time><span class="timeline-dot"></span><div><strong>Hosted buyer lunch</strong><small>Executive lounge</small></div></article></div></section>
           </div>
-          <aside class="app-side-stack"><section class="announcement-panel"><span>${icon('megaphone', 18)}</span><div><strong>Room update</strong><p>Payments that convert has moved to Studio 3.</p><small>12 minutes ago</small></div></section><section class="app-quick-grid"><button data-experience-step="agenda">${icon('calendar-check', 21)}<span><strong>6 sessions</strong><small>My agenda</small></span></button><button data-experience-step="network">${icon('user-round-plus', 21)}<span><strong>12 matches</strong><small>Recommended</small></span></button><button data-experience-step="onsite">${icon('map-pinned', 21)}<span><strong>Hall 2</strong><small>Open map</small></span></button><button data-experience-step="followup">${icon('play-square', 21)}<span><strong>4 saved</strong><small>Recordings</small></span></button></section><section class="offline-ready">${icon('cloud-check', 18)}<div><strong>Ready offline</strong><small>Ticket, agenda, and venue information synced 2 min ago</small></div></section></aside>
+          <aside class="app-side-stack"><section class="announcement-panel"><span>${icon('megaphone', 18)}</span><div><strong>Room update</strong><p>Payments that convert has moved to Studio 3.</p><small>12 minutes ago</small></div></section><section class="app-quick-grid"><button data-experience-step="agenda">${icon('calendar-check', 21)}<span><strong>6 sessions</strong><small>My agenda</small></span></button><button data-experience-step="network">${icon('user-round-plus', 21)}<span><strong>12 matches</strong><small>Recommended</small></span></button><button data-experience-step="onsite">${icon('map-pinned', 21)}<span><strong>Hall 2</strong><small>Open map</small></span></button><button data-experience-step="followup">${icon('play-square', 21)}<span><strong>4 saved</strong><small>Recordings</small></span></button></section><section class="offline-ready">${icon('cloud', 18)}<div><strong>Ready offline</strong><small>Ticket, agenda, and venue information synced 2 min ago</small></div></section></aside>
         </div>
       </main>
       ${attendeeAppNav('home')}
@@ -3276,9 +3540,9 @@ function onsiteExperience() {
     <div class="attendee-page attendee-app-page">
       ${attendeeSiteHeader()}
       <main class="attendee-app-content">
-        <section class="agenda-heading"><div><span class="event-kicker dark">Dubai World Trade Centre</span><h2>Venue and access</h2><p>Friday, 18 September · Doors open at 08:00.</p></div><span class="offline-chip">${icon('cloud-check', 15)}Available offline</span></section>
+        <section class="agenda-heading"><div><span class="event-kicker dark">Dubai World Trade Centre</span><h2>Venue and access</h2><p>Friday, 18 September · Doors open at 08:00.</p></div><span class="offline-chip">${icon('cloud', 15)}Available offline</span></section>
         <div class="onsite-layout">
-          <article class="onsite-ticket"><div class="ticket-top"><span class="summary-event-mark">FC</span><div><strong>Executive pass</strong><small>Mariam Haddad · FC26-MH-481</small></div></div>${qrMarkup()}<p>Present this code at the registration desk. No personal details are stored in the QR.</p><div class="onsite-ticket-meta"><span>${icon('door-open', 16)}North entrance</span><span>${icon('clock-3', 16)}From 08:00</span></div></article>
+          <article class="onsite-ticket"><div class="ticket-top"><span class="summary-event-mark">FC</span><div><strong>General admission</strong><small>Omar Saleh · FC26-OS-481</small></div></div>${qrMarkup()}<p>Present this code at the registration desk. No personal details are stored in the QR.</p><div class="onsite-ticket-meta"><span>${icon('door-open', 16)}North entrance</span><span>${icon('clock-3', 16)}From 08:00</span></div></article>
           <section class="venue-map"><div class="map-toolbar"><div><span class="event-kicker dark">Level 1</span><h3>From North entrance to Hall 2</h3></div><button class="attendee-icon-button" aria-label="Center map" title="Center map">${icon('locate-fixed', 18)}</button></div><div class="map-canvas"><span class="map-space entrance">North<br />entrance</span><span class="map-space hall">Hall 2<br /><small>Main stage</small></span><span class="map-space studio">Studio 3</span><span class="map-space lounge">Executive<br />lounge</span><span class="map-route route-one"></span><span class="map-route route-two"></span><span class="map-you">${icon('navigation', 15)}</span></div><div class="direction-row"><span>1</span><div><strong>Walk through the main concourse</strong><small>About 4 minutes · Step-free route</small></div><button aria-label="Next direction">${icon('chevron-right', 17)}</button></div></section>
           <aside class="onsite-side"><section><h3>Useful places</h3><button>${icon('badge-help', 18)}Registration desk<span>2 min</span></button><button>${icon('utensils', 18)}Executive lounge<span>5 min</span></button><button>${icon('messages-square', 18)}Meeting hub<span>6 min</span></button><button>${icon('accessibility', 18)}Accessibility desk<span>3 min</span></button></section><section class="support-card"><span>${icon('headphones', 20)}</span><div><strong>Need help onsite?</strong><small>Event support is available now</small></div><button>Chat</button></section></aside>
         </div>
@@ -3297,7 +3561,7 @@ function followupExperience() {
         <div class="followup-grid">
           <section class="recordings-panel"><div class="attendee-section-heading compact"><div><span class="event-kicker dark">On demand</span><h3>Continue watching</h3></div><button class="text-link">View all</button></div><article><div class="recording-thumb"><img src="${eventHero}" alt="Conference stage recording" /><span>${icon('play', 18)}</span></div><div><span class="session-tag">48 min</span><h4>Retail intelligence in action</h4><p>Aisha Khan and Stefan Muller</p><div class="recording-progress"><i></i></div><small>68% watched</small></div></article><article><div class="recording-thumb color"><span>${icon('play', 18)}</span></div><div><span class="session-tag">36 min</span><h4>Designing trusted loyalty</h4><p>Elena Petrova</p><small>Not started</small></div></article></section>
           <section class="contacts-panel"><div class="attendee-section-heading compact"><div><span class="event-kicker dark">Connections</span><h3>People you met</h3></div><button class="text-link">Export</button></div><article><span class="network-avatar teal">DO</span><div><strong>Daniel Okafor</strong><small>Met 18 Sep · Meeting hub</small></div><button aria-label="Message Daniel" title="Message">${icon('message-circle', 17)}</button></article><article><span class="network-avatar coral">GB</span><div><strong>Giorgi Beridze</strong><small>Contact exchanged · Hall 2</small></div><button aria-label="Message Giorgi" title="Message">${icon('message-circle', 17)}</button></article><button class="attendee-secondary full">${icon('download', 16)}Download contacts</button></section>
-          <section class="feedback-panel"><span class="event-kicker dark">Your feedback</span><h3>${state.surveySubmitted ? 'Thank you, Mariam' : 'How valuable was the event?'}</h3>${state.surveySubmitted ? `<div class="survey-complete">${icon('check', 24)}<p>Your response was recorded. You can update it until 26 September.</p></div>` : `<div class="rating-row">${[1,2,3,4,5].map(value => `<button aria-label="Rate ${value} out of 5">${icon('star', 22)}</button>`).join('')}</div><textarea placeholder="What should we improve next time?" aria-label="Event feedback"></textarea><button class="attendee-primary full" data-action="submit-survey">Submit feedback</button>`}</section>
+          <section class="feedback-panel"><span class="event-kicker dark">Your feedback</span><h3>${state.surveySubmitted ? 'Thank you, Omar' : 'How valuable was the event?'}</h3>${state.surveySubmitted ? `<div class="survey-complete">${icon('check', 24)}<p>Your response was recorded. You can update it until 26 September.</p></div>` : `<div class="rating-row">${[1,2,3,4,5].map(value => `<button aria-label="Rate ${value} out of 5">${icon('star', 22)}</button>`).join('')}</div><textarea placeholder="What should we improve next time?" aria-label="Event feedback"></textarea><button class="attendee-primary full" data-action="submit-survey">Submit feedback</button>`}</section>
           <section class="certificate-panel"><span>${icon('award', 24)}</span><div><span class="event-kicker dark">Attendance verified</span><h3>Participation certificate</h3><p>Issued for 9 hours and 24 minutes of verified attendance.</p></div><button class="attendee-secondary" data-action="download-certificate">${icon('download', 16)}Download</button></section>
         </div>
       </main>
@@ -3309,9 +3573,13 @@ function followupExperience() {
 function experienceScreen() {
   const screens = {
     discover: discoveryExperience,
-    register: registrationExperience,
+    tickets: ticketSelectionExperience,
+    addons: addonsExperience,
+    attendees: attendeeAssignmentExperience,
     checkout: checkoutExperience,
-    confirmation: confirmationExperience,
+    order: orderStatusExperience,
+    completion: holderCompletionExperience,
+    credential: credentialExperience,
     home: homeExperience,
     agenda: agendaExperience,
     network: networkingExperience,
@@ -3327,7 +3595,7 @@ function attendeeExperienceView() {
   const stepIndex = experienceSteps.findIndex(step => step.id === active.id);
   return `
     <div class="page experience-page">
-      ${pageHeader('Attendee experience', 'Preview as Mariam Haddad · Executive pass · English', `<button class="button" data-route="event-overview">${icon('arrow-left')}Organizer console</button><div class="segmented experience-device-switch"><button class="segment ${state.experienceDevice === 'desktop' ? 'active' : ''}" data-experience-device="desktop">${icon('monitor', 15)}Desktop</button><button class="segment ${state.experienceDevice === 'mobile' ? 'active' : ''}" data-experience-device="mobile">${icon('smartphone', 15)}Mobile</button></div>`)}
+      ${pageHeader('Attendee experience', 'Preview purchaser, ticket-holder, and attendee states · English', `<button class="button" data-route="event-overview">${icon('arrow-left')}Organizer console</button><div class="segmented experience-device-switch"><button class="segment ${state.experienceDevice === 'desktop' ? 'active' : ''}" data-experience-device="desktop">${icon('monitor', 15)}Desktop</button><button class="segment ${state.experienceDevice === 'mobile' ? 'active' : ''}" data-experience-device="mobile">${icon('smartphone', 15)}Mobile</button></div>`)}
       <div class="experience-workbench">
         <aside class="experience-journey">
           <div class="journey-heading"><span class="event-kicker dark">Discovery to value</span><strong>Attendee journey</strong><small>${stepIndex + 1} of ${experienceSteps.length}</small></div>
@@ -3335,7 +3603,7 @@ function attendeeExperienceView() {
         </aside>
         <section class="experience-preview-area">
           <header class="experience-preview-bar"><div><span class="preview-channel">${active.phase}</span><strong>${active.label}</strong><small>${active.requirement}</small></div><div class="preview-state"><span class="status success">Interactive</span><button class="table-action" data-action="restart-experience" aria-label="Restart journey" title="Restart journey">${icon('rotate-ccw', 17)}</button><button class="table-action" aria-label="Open preview in new window" title="Open preview">${icon('external-link', 17)}</button></div></header>
-          <div class="experience-stage ${state.experienceDevice}"><div class="experience-frame"><div class="browser-chrome"><span></span><span></span><span></span><div>${state.experienceStep === 'discover' || state.experienceStep === 'register' || state.experienceStep === 'checkout' ? 'events.nnc.com/future-commerce-2026' : 'app.nnc.events/future-commerce-2026'}</div></div><div class="experience-canvas">${experienceScreen()}</div></div></div>
+          <div class="experience-stage ${state.experienceDevice}"><div class="experience-frame"><div class="browser-chrome"><span></span><span></span><span></span><div>${['discover', 'tickets', 'addons', 'attendees', 'checkout', 'order', 'completion'].includes(state.experienceStep) ? 'events.nnc.com/future-commerce-2026' : 'app.nnc.events/future-commerce-2026'}</div></div><div class="experience-canvas">${experienceScreen()}</div></div></div>
         </section>
       </div>
     </div>
@@ -3583,19 +3851,59 @@ document.addEventListener('click', event => {
     showToast('Campaign created as a draft.');
   }
   if (action === 'save') showToast('Changes saved with an audit record.');
-  if (action === 'choose-ticket') {
-    state.selectedTicket = actionTarget.dataset.ticket;
+  if (action === 'change-ticket-quantity') {
+    const ticket = actionTarget.dataset.ticket;
+    const next = (state.ticketQuantities[ticket] || 0) + Number(actionTarget.dataset.delta);
+    state.ticketQuantities[ticket] = Math.max(0, Math.min(6, next));
     render('experience', true);
   }
-  if (action === 'continue-registration') {
+  if (action === 'change-addon-quantity') {
+    const addon = actionTarget.dataset.addon;
+    const next = (state.addonQuantities[addon] || 0) + Number(actionTarget.dataset.delta);
+    state.addonQuantities[addon] = Math.max(0, Math.min(buyerTicketCount(), next));
+    render('experience', true);
+  }
+  if (action === 'continue-to-addons') {
+    state.experienceStep = 'addons';
+    render('experience', true);
+  }
+  if (action === 'continue-to-attendees') {
+    state.experienceStep = 'attendees';
+    render('experience', true);
+  }
+  if (action === 'set-holder-mode') {
+    state.holderMode = actionTarget.dataset.mode;
+    render('experience', true);
+  }
+  if (action === 'continue-to-checkout') {
     state.experienceStep = 'checkout';
     render('experience', true);
   }
-  if (action === 'complete-payment') {
-    state.experienceStep = 'confirmation';
+  if (action === 'toggle-terms') {
+    state.termsAccepted = !state.termsAccepted;
     render('experience', true);
-    showToast('Payment approved and credential issued.');
   }
+  if (action === 'complete-payment') {
+    state.orderPaid = true;
+    state.experienceStep = 'order';
+    render('experience', true);
+    showToast('Payment approved. Ticket credentials follow each holder profile state.');
+  }
+  if (action === 'open-holder-completion') {
+    state.experienceStep = 'completion';
+    render('experience', true);
+  }
+  if (action === 'complete-holder-registration') {
+    state.holderProfileComplete = true;
+    state.experienceStep = 'credential';
+    render('experience', true);
+    showToast('Required profile completed and QR credential issued.');
+  }
+  if (action === 'review-buyer-order') {
+    state.experienceStep = 'order';
+    render('experience');
+  }
+  if (action === 'send-profile-reminder') showToast('Profile completion reminder sent to Omar Saleh.');
   if (action === 'save-session') {
     const sessionId = actionTarget.dataset.session;
     if (state.savedSessions.has(sessionId)) state.savedSessions.delete(sessionId);
@@ -3618,6 +3926,12 @@ document.addEventListener('click', event => {
   if (action === 'restart-experience') {
     state.experienceStep = 'discover';
     state.selectedTicket = 'Executive';
+    state.ticketQuantities = { 'General admission': 2, Executive: 0, 'Partner allocation': 0 };
+    state.addonQuantities = { 'Workshop day': 0, 'Gala dinner': 0 };
+    state.holderMode = 'later';
+    state.termsAccepted = false;
+    state.orderPaid = false;
+    state.holderProfileComplete = false;
     state.networkRequested = false;
     state.pollVoted = false;
     state.surveySubmitted = false;
